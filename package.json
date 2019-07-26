@@ -1,0 +1,25 @@
+{
+  "name": "movie-app-vuepress",
+  "version": "1.0.0",
+  "description": "\"# movie-app-example-vuepress\"",
+  "main": "index.js",
+  "dependencies": {
+    "vuepress": "^1.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vuepress dev docs/.vuepress/dist",
+    "docs:build": "vuepress build docs/.vuepress/dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/originaljensiegirl/movie-app-example-vuepress.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/originaljensiegirl/movie-app-example-vuepress/issues"
+  },
+  "homepage": "https://github.com/originaljensiegirl/movie-app-example-vuepress#readme"
+}

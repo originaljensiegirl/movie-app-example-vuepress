@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Part 1 | Getting Started with Vue</title>
+    <meta name="description" content="Just a simple practice app.">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.5203916d.css" as="style"><link rel="preload" href="/assets/js/app.c066d6eb.js" as="script"><link rel="preload" href="/assets/js/2.a816d953.js" as="script"><link rel="preload" href="/assets/js/4.7d19f199.js" as="script"><link rel="prefetch" href="/assets/js/10.88dc904d.js"><link rel="prefetch" href="/assets/js/11.eb5c3852.js"><link rel="prefetch" href="/assets/js/12.7ffbb974.js"><link rel="prefetch" href="/assets/js/3.5edc603c.js"><link rel="prefetch" href="/assets/js/5.524b2759.js"><link rel="prefetch" href="/assets/js/6.5369d5a7.js"><link rel="prefetch" href="/assets/js/7.4969f7ac.js"><link rel="prefetch" href="/assets/js/8.aac5efdd.js"><link rel="prefetch" href="/assets/js/9.85db08dc.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.5203916d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Getting Started with Vue</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/" class="sidebar-link">Home</a></li><li><a href="/part-01.html" class="active sidebar-link">Part 1: Getting Started...</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/part-01.html#_1-1-install-vue-and-vue-cli-version-3" class="sidebar-link">1.1 Install Vue and Vue CLI (version 3)</a></li><li class="sidebar-sub-header"><a href="/part-01.html#_1-2-create-a-new-vue-app" class="sidebar-link">1.2 Create a new Vue App</a></li><li class="sidebar-sub-header"><a href="/part-01.html#_1-3-what-did-we-just-do" class="sidebar-link">1.3 What did we just do?</a></li><li class="sidebar-sub-header"><a href="/part-01.html#_1-4-let-s-run-our-app" class="sidebar-link">1.4 Let's run our app!</a></li></ul></li><li><a href="/part-02.html" class="sidebar-link">Part 2: Vuetify</a></li><li><a href="/part-03.html" class="sidebar-link">Part 3: Adding to the DOM</a></li><li><a href="/part-04.html" class="sidebar-link">Part 4: Event Emitters and Props</a></li><li><a href="/part-05.html" class="sidebar-link">Part 5: Components</a></li><li><a href="/part-06.html" class="sidebar-link">Part 6: Debugging Vue</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="part-1"><a href="#part-1" aria-hidden="true" class="header-anchor">#</a> Part 1</h1> <p></p><div class="table-of-contents"><ul><li><a href="#_1-1-install-vue-and-vue-cli-version-3">1.1 Install Vue and Vue CLI (version 3)</a></li><li><a href="#_1-2-create-a-new-vue-app">1.2 Create a new Vue App</a><ul><li><a href="#_1-2-1-success">1.2.1 Success!</a></li><li><a href="#_1-2-2-history-mode">1.2.2 History mode</a></li><li><a href="#_1-2-3-manually-select-features">1.2.3 Manually select features</a></li><li><a href="#_1-2-4-eslint">1.2.4 ESLint</a></li><li><a href="#_1-2-5-lint-on-save">1.2.5 Lint on save</a></li><li><a href="#_1-2-6-configuration">1.2.6 Configuration</a></li><li><a href="#_1-2-7-lint-on-save">1.2.7 Lint on save</a></li></ul></li><li><a href="#_1-3-what-did-we-just-do">1.3 What did we just do?</a></li><li><a href="#_1-4-let-s-run-our-app">1.4 Let's run our app!</a></li></ul></div><p></p> <h2 id="_1-1-install-vue-and-vue-cli-version-3"><a href="#_1-1-install-vue-and-vue-cli-version-3" aria-hidden="true" class="header-anchor">#</a> 1.1 Install Vue and Vue CLI (version 3)</h2> <p>To make sure you have Vue and the latest version of the Vue CLI installed, type the following into your terminal.</p> <p><code>npm install -g vue @vue/cli</code></p> <p>This installs 2 packages globally: Vue and the Vue CLI.</p> <h2 id="_1-2-create-a-new-vue-app"><a href="#_1-2-create-a-new-vue-app" aria-hidden="true" class="header-anchor">#</a> 1.2 Create a new Vue App</h2> <p>The Vue CLI will allows us to quickly create a Vue project.</p> <p>To create a new Vue application, you can type the following, replacing the <code>&lt;app-name&gt;</code> with the name of your choice.
+vue create <code>&lt;app-name&gt;</code></p> <p>In this case, I’ll be using <code>movie-app</code> as my title, so I’ll type:</p> <p><code>vue create movie-app</code></p> <h3 id="_1-2-1-success"><a href="#_1-2-1-success" aria-hidden="true" class="header-anchor">#</a> 1.2.1 Success!</h3> <p>If this command is successful, you should see something like this on your screen:</p> <div class="language- extra-class"><pre class="language-text"><code>
+Vue CLI v3.6.3
+┌───────────────────────────┐
+│  Update available: 3.9.3  │
+└───────────────────────────┘
+
+? Please pick a preset:
+  default-no-typescript (vuex, node-sass, babel, eslint)
+  default (babel, eslint)
+&gt; Manually select features
+
+</code></pre></div><h3 id="_1-2-2-history-mode"><a href="#_1-2-2-history-mode" aria-hidden="true" class="header-anchor">#</a> 1.2.2 History mode</h3> <div class="language- extra-class"><pre class="language-text"><code>
+? Use history mode for router? (Requires proper server setup for index fallback in production) (Y/n) n
+
+</code></pre></div><h3 id="_1-2-3-manually-select-features"><a href="#_1-2-3-manually-select-features" aria-hidden="true" class="header-anchor">#</a> 1.2.3 Manually select features</h3> <p>We'll be selecting features manually, so you'll want use the arrow keys to select <code>Manually select features</code></p> <div class="language- extra-class"><pre class="language-text"><code>
+? Check the features needed for your project:
+ (*) Babel
+ ( ) TypeScript
+ ( ) Progressive Web App (PWA) Support
+ (*) Router
+ (*) Vuex
+ ( ) CSS Pre-processors
+ (*) Linter / Formatter
+ ( ) Unit Testing
+ ( ) E2E Testing
+
+</code></pre></div><h3 id="_1-2-4-eslint"><a href="#_1-2-4-eslint" aria-hidden="true" class="header-anchor">#</a> 1.2.4 ESLint</h3> <p>We'll use <code>ESLint with error prevention only</code></p> <div class="language- extra-class"><pre class="language-text"><code>
+? Pick a linter / formatter config:
+&gt; ESLint with error prevention only
+  ESLint + Airbnb config
+  ESLint + Standard config
+  ESLint + Prettier
+
+</code></pre></div><h3 id="_1-2-5-lint-on-save"><a href="#_1-2-5-lint-on-save" aria-hidden="true" class="header-anchor">#</a> 1.2.5 Lint on save</h3> <p>Choose <code>Lint on save</code> if it's not already selected. Don't worry about the <code>lint and fix</code> option for now.</p> <div class="language- extra-class"><pre class="language-text"><code>
+? Pick additional lint features:
+ (*) Lint on save
+ ( ) Lint and fix on commit
+
+</code></pre></div><h3 id="_1-2-6-configuration"><a href="#_1-2-6-configuration" aria-hidden="true" class="header-anchor">#</a> 1.2.6 Configuration</h3> <div class="language- extra-class"><pre class="language-text"><code>
+? Where do you prefer placing config for Babel, PostCSS, ESLint, etc.?
+  In dedicated config files
+&gt; In package.json
+
+</code></pre></div><h4 id="optional"><a href="#optional" aria-hidden="true" class="header-anchor">#</a> Optional</h4> <p>If you want to reuse these settings on a future app, you can save it as a preset:</p> <div class="language- extra-class"><pre class="language-text"><code>
+? Save this as a preset for future projects? (y/N) y
+
+</code></pre></div><h3 id="_1-2-7-lint-on-save"><a href="#_1-2-7-lint-on-save" aria-hidden="true" class="header-anchor">#</a> 1.2.7 Lint on save</h3> <p>When you create a new project successfully, you should see the following:</p> <div class="language- extra-class"><pre class="language-text"><code>
+Vue CLI v3.6.3
+✨  Creating project in C:\Users\jpage\source\repos\movie-app-client\movie-app.
+�  Initializing git repository...
+⚙  Installing CLI plugins. This might take a while...
+
+</code></pre></div><h2 id="_1-3-what-did-we-just-do"><a href="#_1-3-what-did-we-just-do" aria-hidden="true" class="header-anchor">#</a> 1.3 What did we just do?</h2> <p>We just created a simple, bare-bones app that we can use as our base.</p> <p>You're app directory should look something like this:</p> <p><img src="/assets/img/app-structure.ebb88492.png" alt="App directory"></p> <h2 id="_1-4-let-s-run-our-app"><a href="#_1-4-let-s-run-our-app" aria-hidden="true" class="header-anchor">#</a> 1.4 Let's run our app!</h2> <p>If you look in your <code>package.json</code>, you should see 3 scripts: <code>build</code>, <code>serve</code>, and <code>lint</code>.</p> <p>Open a terminal in VS Code or navigate to the directory of your Vue app in Command Prompt.</p> <p>Type <code>npm run serve</code>.</p> <div class="language- extra-class"><pre class="language-text"><code>
+&gt; movie-app@0.1.0 serve C:\Users\jpage\source\repos\movie-app-client\movie-app
+&gt; vue-cli-service serve
+
+ INFO  Starting development server...
+ 98% after emitting CopyPlugin 
+
+ DONE  Compiled successfully in 12674ms                                                          9:58:03 PM
+
+  App running at:
+  - Local:   http://localhost:8080/
+  - Network: http://10.70.242.30:8080/
+
+  Note that the development build is not optimized.
+  To create a production build, run npm run build.
+
+</code></pre></div><p>Open you're browser of choice (I recommend Chrome) and go to 'http://localhost:8080/'.</p> <p>Voilà! (Or Vuelà)</p> <p>You should see this:</p> <p><img src="/assets/img/blank-vue-app.08cd6be7.png" alt="App directory"></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/" class="prev router-link-active">
+          Home
+        </a></span> <span class="next"><a href="/part-02.html">
+          Part 2: Vuetify
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.c066d6eb.js" defer></script><script src="/assets/js/2.a816d953.js" defer></script><script src="/assets/js/4.7d19f199.js" defer></script>
+  </body>
+</html>
