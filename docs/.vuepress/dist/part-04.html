@@ -7,30 +7,30 @@
     <meta name="description" content="Just a simple practice app.">
     
     
-    <link rel="preload" href="/assets/css/0.styles.5203916d.css" as="style"><link rel="preload" href="/assets/js/app.c066d6eb.js" as="script"><link rel="preload" href="/assets/js/2.a816d953.js" as="script"><link rel="preload" href="/assets/js/11.eb5c3852.js" as="script"><link rel="prefetch" href="/assets/js/10.88dc904d.js"><link rel="prefetch" href="/assets/js/12.7ffbb974.js"><link rel="prefetch" href="/assets/js/3.5edc603c.js"><link rel="prefetch" href="/assets/js/4.7d19f199.js"><link rel="prefetch" href="/assets/js/5.524b2759.js"><link rel="prefetch" href="/assets/js/6.5369d5a7.js"><link rel="prefetch" href="/assets/js/7.4969f7ac.js"><link rel="prefetch" href="/assets/js/8.aac5efdd.js"><link rel="prefetch" href="/assets/js/9.85db08dc.js">
+    <link rel="preload" href="/assets/css/0.styles.5203916d.css" as="style"><link rel="preload" href="/assets/js/app.0ab298ce.js" as="script"><link rel="preload" href="/assets/js/2.a816d953.js" as="script"><link rel="preload" href="/assets/js/11.3229ad39.js" as="script"><link rel="prefetch" href="/assets/js/10.b3a4c84b.js"><link rel="prefetch" href="/assets/js/12.0276e855.js"><link rel="prefetch" href="/assets/js/3.5edc603c.js"><link rel="prefetch" href="/assets/js/4.ad202407.js"><link rel="prefetch" href="/assets/js/5.a8c6bc2d.js"><link rel="prefetch" href="/assets/js/6.e1a67d6c.js"><link rel="prefetch" href="/assets/js/7.1210d478.js"><link rel="prefetch" href="/assets/js/8.aac5efdd.js"><link rel="prefetch" href="/assets/js/9.85db08dc.js">
     <link rel="stylesheet" href="/assets/css/0.styles.5203916d.css">
   </head>
   <body>
-    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Getting Started with Vue</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/" class="sidebar-link">Home</a></li><li><a href="/part-01.html" class="sidebar-link">Part 1: Getting Started...</a></li><li><a href="/part-02.html" class="sidebar-link">Part 2: Vuetify</a></li><li><a href="/part-03.html" class="sidebar-link">Part 3: Adding to the DOM</a></li><li><a href="/part-04.html" class="active sidebar-link">Part 4: Event Emitters and Props</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/part-04.html#_4-1-components" class="sidebar-link">4.1 Components</a></li></ul></li><li><a href="/part-05.html" class="sidebar-link">Part 5: Components</a></li><li><a href="/part-06.html" class="sidebar-link">Part 6: Debugging Vue</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="part-4"><a href="#part-4" aria-hidden="true" class="header-anchor">#</a> Part 4</h1> <p></p><div class="table-of-contents"><ul><li><a href="#_4-1-components">4.1 Components</a><ul><li><a href="#_4-1-1-re-structuring-to-use-components">4.1.1 Re-structuring to use components</a></li></ul></li></ul></div><p></p> <h2 id="_4-1-components"><a href="#_4-1-components" aria-hidden="true" class="header-anchor">#</a> 4.1 Components</h2> <h3 id="_4-1-1-re-structuring-to-use-components"><a href="#_4-1-1-re-structuring-to-use-components" aria-hidden="true" class="header-anchor">#</a> 4.1.1 Re-structuring to use components</h3> <p>We have a decent layout, but we might want to reuse the movie cards somewhere else.</p> <p>Let create a component by creating a new Vue file under the <code>components</code> directory called <code>MovieCard.vue</code>.</p> <p>Add the following the <code>MovieCard.vue</code>:</p> <h4 id="moviecard-vue"><a href="#moviecard-vue" aria-hidden="true" class="header-anchor">#</a> MovieCard.vue</h4> <div class="language- extra-class"><pre class="language-text"><code>
-&lt;template&gt;&lt;/template&gt;
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Getting Started with Vue</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/" class="sidebar-link">Home</a></li><li><a href="/part-01.html" class="sidebar-link">Part 1: Getting Started...</a></li><li><a href="/part-02.html" class="sidebar-link">Part 2: Vuetify</a></li><li><a href="/part-03.html" class="sidebar-link">Part 3: Adding to the DOM</a></li><li><a href="/part-04.html" class="active sidebar-link">Part 4: Components</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/part-04.html#_4-1-components" class="sidebar-link">4.1 Components</a></li></ul></li><li><a href="/part-05.html" class="sidebar-link">Part 5: Event Emitters and Props</a></li><li><a href="/part-06.html" class="sidebar-link">Part 6: Debugging Vue</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="part-4"><a href="#part-4" aria-hidden="true" class="header-anchor">#</a> Part 4</h1> <p></p><div class="table-of-contents"><ul><li><a href="#_4-1-components">4.1 Components</a><ul><li><a href="#_4-1-1-re-structuring-to-use-components">4.1.1 Re-structuring to use components</a></li></ul></li></ul></div><p></p> <h2 id="_4-1-components"><a href="#_4-1-components" aria-hidden="true" class="header-anchor">#</a> 4.1 Components</h2> <h3 id="_4-1-1-re-structuring-to-use-components"><a href="#_4-1-1-re-structuring-to-use-components" aria-hidden="true" class="header-anchor">#</a> 4.1.1 Re-structuring to use components</h3> <p>We have a decent layout, but we might want to reuse the cards we just created somewhere else in our app. We can easily create a reusable component containing the cards.</p> <p>Let's create a component by creating a new Vue file under the <code>components</code> directory called <code>MovieCard.vue</code>.</p> <p>Add the following the <code>MovieCard.vue</code>:</p> <h4 id="moviecard-vue"><a href="#moviecard-vue" aria-hidden="true" class="header-anchor">#</a> MovieCard.vue</h4> <div class="language-vue extra-class"><pre class="language-vue"><code>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
 
-&lt;style&gt;&lt;/style&gt;
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
 
-&lt;script&gt;
-export default {
-  props: {
-    movie: Object
-  },
-  data: () =&gt; ({   
-      editRating: 0
-  }),
-  created() {
-      this.editRating = this.$props.movie.rating
-  }
-};
-&lt;/script&gt;
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  props<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    movie<span class="token punctuation">:</span> Object
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">data</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>   
+      editRating<span class="token punctuation">:</span> <span class="token number">0</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token function">created</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>editRating <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$props<span class="token punctuation">.</span>movie<span class="token punctuation">.</span>rating
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
 
-</code></pre></div><p>Notice that I've added <code>props</code> to the new component. The <code>movie</code> prop will eventually be passed in by the parent controller.</p> <p>We'll remove the v-card from the template of <code>App.vue</code> and place in the template of our new component.</p> <h4 id="moviecard-vue-2"><a href="#moviecard-vue-2" aria-hidden="true" class="header-anchor">#</a> MovieCard.vue</h4> <div class="language-vue extra-class"><pre class="language-vue"><code>
+</code></pre></div><p>Notice that I've added <code>props</code> to the new component. The <code>movie</code> prop will eventually be passed in by the parent controller.</p> <p>We'll move the v-card from the template of <code>App.vue</code> and into the template of our new component.</p> <h4 id="moviecard-vue-2"><a href="#moviecard-vue-2" aria-hidden="true" class="header-anchor">#</a> MovieCard.vue</h4> <div class="language-vue extra-class"><pre class="language-vue"><code>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-card</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fill-height<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-img</span> <span class="token attr-name">:src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>movie.img<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
@@ -102,41 +102,41 @@ export default {
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
 
-</code></pre></div><p>We'll also need to add <code>&lt;MovieCard/&gt;</code> where our old v-card used to be in the template:</p> <div class="language- extra-class"><pre class="language-text"><code>
-&lt;template&gt;
-  &lt;v-app class=&quot;app&quot;&gt;
-    &lt;v-content&gt;
-      &lt;v-layout justify-center row wrap fill-height&gt;
-        &lt;v-flex xs12 md4 pa-4&gt;
-          &lt;h2&gt;My Top Rated Movies&lt;/h2&gt;
-          &lt;ul&gt;
-            &lt;li v-for=&quot;(m, index) in favoriteMovies&quot; :key=&quot;index&quot;&gt;{{m.title}}&lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/v-flex&gt;
-        &lt;v-flex xs12 md8 pa-4 fill-height&gt;
-          &lt;v-layout justify-left row wrap class=&quot;fill-height&quot;&gt;
-            &lt;v-flex xs12&gt;
-              &lt;h1&gt;My Movies&lt;/h1&gt;
-            &lt;/v-flex&gt;
-            &lt;v-flex xs6 sm4 md4 lg3 xl3 pa-2 v-for=&quot;(m, index) in movies&quot; :key=&quot;index&quot;&gt;
-              &lt;MovieCard&gt;&lt;/MovieCard&gt;
-            &lt;/v-flex&gt;
-          &lt;/v-layout&gt;
-        &lt;/v-flex&gt;
-      &lt;/v-layout&gt;
-    &lt;/v-content&gt;
-  &lt;/v-app&gt;
-&lt;/template&gt;
+</code></pre></div><p>We'll also need to add <code>&lt;MovieCard&gt;&lt;/MovieCard&gt;</code> where our v-card used to be in the template:</p> <div class="language-vue extra-class"><pre class="language-vue"><code>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-app</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>app<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-content</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-layout</span> <span class="token attr-name">justify-center</span> <span class="token attr-name">row</span> <span class="token attr-name">wrap</span> <span class="token attr-name">fill-height</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-flex</span> <span class="token attr-name">xs12</span> <span class="token attr-name">md4</span> <span class="token attr-name">pa-4</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>My Top Rated Movies<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>(m, index) in favoriteMovies<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>index<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>{{m.title}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>v-flex</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-flex</span> <span class="token attr-name">xs12</span> <span class="token attr-name">md8</span> <span class="token attr-name">pa-4</span> <span class="token attr-name">fill-height</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-layout</span> <span class="token attr-name">justify-left</span> <span class="token attr-name">row</span> <span class="token attr-name">wrap</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fill-height<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-flex</span> <span class="token attr-name">xs12</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>My Movies<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>v-flex</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-flex</span> <span class="token attr-name">xs6</span> <span class="token attr-name">sm4</span> <span class="token attr-name">md4</span> <span class="token attr-name">lg3</span> <span class="token attr-name">xl3</span> <span class="token attr-name">pa-2</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>(m, index) in movies<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>index<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>MovieCard</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>MovieCard</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>v-flex</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>v-layout</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>v-flex</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>v-layout</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>v-content</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>v-app</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
 
 </code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
         ←
         <a href="/part-03.html" class="prev">
           Part 3: Adding to the DOM
         </a></span> <span class="next"><a href="/part-05.html">
-          Part 5: Components
+          Part 5: Event Emitters and Props
         </a>
         →
       </span></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.c066d6eb.js" defer></script><script src="/assets/js/2.a816d953.js" defer></script><script src="/assets/js/11.eb5c3852.js" defer></script>
+    <script src="/assets/js/app.0ab298ce.js" defer></script><script src="/assets/js/2.a816d953.js" defer></script><script src="/assets/js/11.3229ad39.js" defer></script>
   </body>
 </html>

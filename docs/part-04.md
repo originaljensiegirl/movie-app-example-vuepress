@@ -6,14 +6,14 @@
 
 ### 4.1.1 Re-structuring to use components
 
-We have a decent layout, but we might want to reuse the movie cards somewhere else.
+We have a decent layout, but we might want to reuse the cards we just created somewhere else in our app. We can easily create a reusable component containing the cards.
 
-Let create a component by creating a new Vue file under the `components` directory called `MovieCard.vue`.
+Let's create a component by creating a new Vue file under the `components` directory called `MovieCard.vue`.
 
 Add the following the `MovieCard.vue`:
 
 #### MovieCard.vue
-~~~~
+~~~~ vue
 
 <template></template>
 
@@ -37,7 +37,7 @@ export default {
 
 Notice that I've added `props` to the new component. The `movie` prop will eventually be passed in by the parent controller.
 
-We'll remove the v-card from the template of `App.vue` and place in the template of our new component.
+We'll move the v-card from the template of `App.vue` and into the template of our new component.
 
 #### MovieCard.vue
 ~~~~ vue
@@ -121,9 +121,9 @@ export default {
 
 ~~~~
 
-We'll also need to add `<MovieCard/>` where our old v-card used to be in the template:
+We'll also need to add `<MovieCard></MovieCard>` where our v-card used to be in the template:
 
-~~~~
+~~~~ vue
 
 <template>
   <v-app class="app">

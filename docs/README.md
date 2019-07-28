@@ -1,22 +1,32 @@
-# Welcome to my Vue Tutorial!
+# Welcome
 
 ## Why use Vue?
 
-Vue is a JavaScript framework that
-- is easy-to-learn that provides
+Vue is a frontend framework that
+- is easy-to-learn
 - has a strong community
-- an easy way to create reusable components that include
+- makes it easy to create reusable components that include
     - template markup
     - logic/script
     - styles that can be scoped
+- makes it easy to create polished UIs with Vuetify
 
-
-## Start Learning
+## Our project
 
 Jump right in with [Part One](./part-01)!
 
-::: tip
-## Resources
-
+### Resources
 [Vue Docs](https://vuejs.org/v2/guide/)
-:::
+
+[Vue Dev Tools](https://vuejs.org/v2/guide/)
+
+[Vuetify Docs](https://vuetifyjs.com/en/)
+
+[VuePress](https://vuepress.vuejs.org/config/#description)
+
+[Netlify](https://www.netlify.com/)
+
+### Other Things Just for Fun
+[Movie API](http://www.omdbapi.com/)
+
+[Zdog](https://zzz.dog/)

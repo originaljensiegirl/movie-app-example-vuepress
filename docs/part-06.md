@@ -15,7 +15,7 @@ Use the chrome dev tools
 
 :::
 
-### 6.1.2 Placing Breakpoints in Vue Files
+<!-- ### 6.1.2 Placing Breakpoints in Vue Files
 
 To help us debug our apps, we can add the ``
 
@@ -24,7 +24,7 @@ To help us debug our apps, we can add the ``
 
 
 
-~~~~
+~~~~ -->
 
 ### 6.1.3 Additional Resources
 Vue.js Debugging Docs: [https://vuejs.org/v2/cookbook/debugging-in-vscode.html](https://vuejs.org/v2/cookbook/debugging-in-vscode.html)

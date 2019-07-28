@@ -13,11 +13,11 @@
 </template>
 
 <style> 
-<!-- CSS here -->
+    /* CSS here */
 </style>
 
 <script>
-<!-- JS/TS -->
+   // JS/TS 
 </script>
 
 ~~~~
@@ -46,7 +46,7 @@ export default {
 
 ~~~~
 
-## 3.2 Working on the UI
+## 3.2 Working in the UI
 
 ### 3.2.1 Cleaning up the markup
 
@@ -148,7 +148,7 @@ I'm going to update the template by adding some Vuetify components into my templ
 
 Let's go ahead and add some custom styles!
 
-~~~~
+~~~~ vue
 
 <style scoped>
 .app {
